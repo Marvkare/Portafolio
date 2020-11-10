@@ -1,0 +1,122 @@
+*{
+  margin: 0%;
+  padding: 0%; 
+}
+body{
+}
+.container-grid{
+  
+}
+
+nav{
+  height: 100px;
+}
+
+.title >a{
+  font-family: 'Scheherazade', serif;
+  padding-left: 20px;
+  font-size: 40px;
+}
+
+.header-ul {  
+  display: block;   
+  padding-right: 40px;
+ 
+}
+.container-grid{
+  display: inline-block;
+  padding: 20px;
+}
+.header-img{
+  display: none;
+}
+.header-a{
+  font-family: 'Baloo Tammudu 2', cursive;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: cadetblue;
+}
+
+.flex-container > div{
+  background-color: chartreuse;
+  color: aliceblue;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+.container{
+  display: grid;
+  grid-template-columns: 25% 75% ;
+}
+
+.container{
+  
+  padding: 1px;
+}
+
+.elements{
+  background-color: darkmagenta;
+  display: block;
+  display: inline-block;
+}
+
+.subcontainer{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%  ;
+}
+
+
+.col-sm > .card{
+  border-radius: 30px;
+}
+
+.col-sm > .card> img{
+  padding: 20px;
+}
+.row{
+  padding-bottom: 20px;
+}
+/*---------- Footer ----*/
+
+footer{
+  
+  height: 200px;
+  
+}
+
+footer > * {
+  
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/*----Slider Styles ----*/
+
+
+.slide-body > *{
+  margin-top: 30px ;
+  margin-left: 30px;
+  color: aliceblue;
+  
+}
+
+.slide-body{
+  width: 400px;
+  height: 100px;
+}
+.buttom{
+  display: grid;
+  grid-gap: 10px;
+}
+
+.buttom > img{
+  margin-left: 600px;
+}
