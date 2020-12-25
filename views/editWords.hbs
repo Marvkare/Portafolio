@@ -1,0 +1,16 @@
+<div>
+
+{{#each data}}
+
+<form method="POST" action="/updateWords/{{id}}">
+    <input type="text" name="wordOne" id="wordOne" value="{{wordOne}}"> 
+    
+
+    <input type="text" name="wordTwo" id="wordOne" value="{{wordTwo}}">
+    <button type="submit">Update</button>
+    <a href="/rememberThis">Back</a>
+</form>
+
+{{/each}}
+
+</div>

@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="./css/rememberThis.css">
+
+<form action="/rememberThis/addWords" method="POST">
+    
+    <input type="text" name="wordOne" id="wordOne">
+    <input type="text" name="wordTwo" id="wordTwo">
+    <button type="submit" id="agregarBtn"></button>
+</form>
+<div class="boxContainer">
+    
+<div class="box" id="boxOne">    
+    <div class="title">
+        <h1>Español</h1>
+    </div>
+    <form action="/remeberThis/deleteWords">
+        {{#each data}}
+        <div class="words"> {{wordOne}}  </div>       
+        {{/each}}
+    </form>
+    
+</div>
+    
+<div class="box" id="boxTwo">
+    <div class="title">
+        <h1>Ingles</h1>
+    </div>
+    {{#each data}}
+    <div class="words"> {{wordTwo}} <div class="button "><a href="/deleteWords/{{wordOne}}">Eliminar</a>  <a href="/editWords/{{wordOne}} ">Edit</a></div></div>  
+    {{/each}}
+    
+</div>
+</div>
+<div class="">
+        <a class="aLeft" href=""><</a> <p class=""></p> <a class="aRigth" href="">></a>
+</div>
+<script type="" src="./rememberThis.js"></script>
