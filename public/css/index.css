@@ -1,0 +1,58 @@
+/*Botones principales*/
+:root{
+    --moradote: #2f013d;
+    --morado:   #65088f;
+    --moradito:   #b278a9; 
+    --amarelleto:   #f5ee00;
+    --mostasa:   #e09e01;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.contenedor{
+    background: var(--moradote);
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+
+.contenedor>div{
+    background-color: var(--morado);
+    margin: 10px;
+    padding: 10px; 
+    border-radius: 4px;
+    display: flex;
+}
+.box:hover{
+    background: var(--moradito);
+}
+
+a{
+    color: var(--amarelleto);
+}
+
+/**/
+.contenedor1{
+    background:url(../img/Web\ things\ logo.png);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+.contenedor1>div{
+    background-color: var(--morado);
+    margin: 10px;
+    padding: 10px; 
+    border-radius: 4px;
+    display: flex;
+}

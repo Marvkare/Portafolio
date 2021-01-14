@@ -1,11 +1,13 @@
 <link rel="stylesheet" href="./css/rememberThis.css">
 
-<form action="/rememberThis/addWords" method="POST">
-    
+<div class="contenedor">
+   <div class="form">
+       <form action="/rememberThis/addWords" method="POST">
     <input type="text" name="wordOne" >
-    <input type="text" name="wordTwo" ">
+    <input type="text" name="wordTwo" >
     <button type="submit" id="agregarBtn"></button>
-</form>
+    </form>
+  
 <div class="boxContainer">
         
 <div class="box" id="boxOne">    
@@ -25,12 +27,14 @@
         <h1>Ingles</h1>
     </div>
     {{#each data}}
-    <div class="words"> <p id="wordTwo"> {{wordTwo}}</p> <div class="button "> <a href="/deleteWords/{{wordOne}}">Eliminar</a>  <a href="/editWords/{{wordOne}} ">Edit</a></div></div>  
+    <div class="words"> <p id=""> {{wordTwo}}</p> <div class="button "> <a href="/deleteWords/{{wordOne}}">Eliminar</a>  <a href="/editWords/{{wordOne}} ">Edit</a></div></div>  
     {{/each}}
     
 </div>
 </div>
-<div class="">
-        <a class="aLeft" href=""><</a> <p class=""></p> <a class="aRigth" href="">></a>
+<div class="buttons">
+        <a class="aLeft" href=""><</a> <p class="">{{title}}</p> <a class="aRigth" href="">></a>
+</div>
+ </div> 
 </div>
 <script  src="./js/rememberThis.js"></script>

@@ -26,6 +26,8 @@ app.use(express.urlencoded({ extende: false}))
 //routes
 app.use(require('./routes/index.routes'));
 app.use(require('./routes/rememberthis.routes'))
+app.use(require('./routes/marvkare.routes'))
+app.use(require('./routes/webThings.routes')) 
 
 app.listen(app.get('port'), () => {
   console.log(`Server on port ${app.get('port')}`);

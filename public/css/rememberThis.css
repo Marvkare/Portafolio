@@ -3,6 +3,12 @@ body{
     margin: 0%;
 }
 
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .boxContainer{
     display: flex;
     
@@ -28,11 +34,12 @@ body{
 
 
 .button{
-    background-color: darkslateblue;
+    background-color: rgb(168, 164, 192);
     margin-left: 5px;
     padding: 2px;
     border-radius: 3px;
     color: firebrick;
+    align-items: flex-end;
 }
 
 .title{
@@ -40,4 +47,16 @@ body{
     border-radius: 3px;
     padding: 5px;
     text-align: center;
+}
+
+#wordOne{
+    visibility: hide;
+}
+.form{
+    display: block;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
